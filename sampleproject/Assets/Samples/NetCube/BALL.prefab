@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 2469323487610213410}
   - component: {fileID: 2469323487610213411}
   - component: {fileID: 2469323487610213412}
-  - component: {fileID: 2469323487610213413}
   - component: {fileID: 2552174147846842480}
   - component: {fileID: 5304272404096775568}
-  - component: {fileID: 1710426002176190917}
   - component: {fileID: 9050123105121648703}
+  - component: {fileID: 4678172065685018708}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: BALL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2469323487610213414}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2469323487610213412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: de2c3f52869644d139ebebcbb3ee41a6, type: 2}
+  - {fileID: 2100000, guid: 57161885f843ae24c80f4e316edcdc24, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2469323487610213413
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2469323487610213414}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2552174147846842480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,12 +98,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ForcePrefabConversion: 0
-  DefaultGhostMode: 2
+  DefaultGhostMode: 0
   SupportedGhostModes: 3
   OptimizationMode: 0
   Importance: 1
-  prefabId: bd05f2145763d425091243a36d80d893
-  Name: Cube
+  prefabId: e046db843aee3f1439a4aea592c74698
+  Name: BALL
   RefGameObjects:
   - {fileID: 2469323487610213414}
   - {fileID: 2469323487610213414}
@@ -189,18 +175,6 @@ MonoBehaviour:
     Tag05: 0
     Tag06: 0
     Tag07: 0
---- !u!114 &1710426002176190917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2469323487610213414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e91240793e28424a83c4ecdd08909a5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9050123105121648703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,3 +187,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fea7091bb9848b191c018d3718ec0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &4678172065685018708
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2469323487610213414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
